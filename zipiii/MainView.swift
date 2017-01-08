@@ -1,7 +1,10 @@
 import Cocoa
 import Foundation
+import Zip
+import XCGLogger
 
 class MainView: NSView {
+	private let log = XCGLogger.default
 
 	required init?(coder: NSCoder) {
 		super.init(coder: coder)
@@ -21,9 +24,21 @@ class MainView: NSView {
 			if (elements?.contains((NSFilenamesPboardType as NSString) as String))! {
 				let files: [String] = pboard.propertyList(forType: NSFilenamesPboardType) as! [String]
 				for file in files {
-					NSLog("%@", file);
+					log.info(file);
+
+					do {
+//						let filePath = Bundle.main.url(forResource: "file", withExtension: "zip")!
+						let filePath = URL(fileURLWithPath: file)
+						let zipFilePath = try Zip.quickZipFiles([filePath], fileName: "archive") // Zip
+
+						log.info(zipFilePath);
+
+					} catch {
+						log.info("Something went wrong")
+					}
+
 				}
-				NSLog("--------------------------------------");
+				log.info("--------------------------------------");
 			}
 
 			return true
