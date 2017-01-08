@@ -197,3 +197,6 @@ crashlytics-build.properties
 fabric.properties
 
 .idea
+Podfile.lock
+Pods/
+zipiii.xcworkspace/
