@@ -36,7 +36,7 @@ class MainView: NSView {
 				}
 
 				do {
-					try Zip.zipFiles(paths: filePaths, zipFilePath: URL(fileURLWithPath: "/Users/" + NSUserName() + "/Desktop/sample.zip"), password: nil, progress: { (progress) -> () in
+					try Zip.zipFiles(paths: filePaths, zipFilePath: URL(fileURLWithPath: NSHomeDirectory() + "/Desktop/sample.zip"), password: nil, progress: { (progress) -> () in
 						self.log.info(progress);
 					});
 				} catch {
