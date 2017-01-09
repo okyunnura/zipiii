@@ -23,20 +23,24 @@ class MainView: NSView {
 			let elements = pboard.types
 			if (elements?.contains((NSFilenamesPboardType as NSString) as String))! {
 				let files: [String] = pboard.propertyList(forType: NSFilenamesPboardType) as! [String]
+				if (files.isEmpty) {
+					log.info("files is empty");
+					return false;
+				}
+
+				var filePaths: [URL] = [];
 				for file in files {
 					log.info(file);
+					let filePath = URL(fileURLWithPath: file)
+					filePaths.append(filePath)
+				}
 
-					do {
-//						let filePath = Bundle.main.url(forResource: "file", withExtension: "zip")!
-						let filePath = URL(fileURLWithPath: file)
-						let zipFilePath = try Zip.quickZipFiles([filePath], fileName: "archive") // Zip
-
-						log.info(zipFilePath);
-
-					} catch {
-						log.info("Something went wrong")
-					}
-
+				do {
+					try Zip.zipFiles(paths: filePaths, zipFilePath: URL(fileURLWithPath: "/Users/" + NSUserName() + "/Desktop/sample.zip"), password: nil, progress: { (progress) -> () in
+						self.log.info(progress);
+					});
+				} catch {
+					log.info("Something went wrong")
 				}
 				log.info("--------------------------------------");
 			}
