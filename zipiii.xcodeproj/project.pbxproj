@@ -16,6 +16,7 @@
 		E9B3EA2D1E1FFBFA005D4324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B3EA2B1E1FFBFA005D4324 /* Main.storyboard */; };
 		E9B3EA381E1FFBFA005D4324 /* zipiiiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3EA371E1FFBFA005D4324 /* zipiiiTests.swift */; };
 		E9B3EA431E1FFBFA005D4324 /* zipiiiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B3EA421E1FFBFA005D4324 /* zipiiiUITests.swift */; };
+		E9BE4C491E3968C50027B244 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BE4C481E3968C50027B244 /* WindowController.swift */; };
 		F0BAD2DCEC25871B9F09C80A /* Pods_zipiiiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8CFE43805A0CE4E163D1358 /* Pods_zipiiiTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		E9B3EA3E1E1FFBFA005D4324 /* zipiiiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zipiiiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B3EA421E1FFBFA005D4324 /* zipiiiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zipiiiUITests.swift; sourceTree = "<group>"; };
 		E9B3EA441E1FFBFA005D4324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9BE4C481E3968C50027B244 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				E9B3EA2B1E1FFBFA005D4324 /* Main.storyboard */,
 				E9B3EA2E1E1FFBFA005D4324 /* Info.plist */,
 				E9B1D1751E211F550070091E /* MainView.swift */,
+				E9BE4C481E3968C50027B244 /* WindowController.swift */,
 			);
 			path = zipiii;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9B3EA281E1FFBFA005D4324 /* ViewController.swift in Sources */,
+				E9BE4C491E3968C50027B244 /* WindowController.swift in Sources */,
 				E9B1D1761E211F550070091E /* MainView.swift in Sources */,
 				E9B3EA261E1FFBFA005D4324 /* AppDelegate.swift in Sources */,
 			);
