@@ -245,7 +245,7 @@
 				TargetAttributes = {
 					E9B3EA211E1FFBFA005D4324 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = AM3MC72R2C;
+						DevelopmentTeam = T4P276374L;
 						ProvisioningStyle = Automatic;
 					};
 					E9B3EA321E1FFBFA005D4324 = {
@@ -598,11 +598,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = AM3MC72R2C;
+				DEVELOPMENT_TEAM = T4P276374L;
 				INFOPLIST_FILE = zipiii/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = net.okyunnura.zipiii;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acryink.zipiii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -615,11 +615,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = AM3MC72R2C;
+				DEVELOPMENT_TEAM = T4P276374L;
 				INFOPLIST_FILE = zipiii/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = net.okyunnura.zipiii;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.acryink.zipiii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
